@@ -5,11 +5,15 @@ set expandtab
 set autoindent
 set cindent
 set shiftwidth=4
+set hlsearch
 set ignorecase smartcase
 let c_space_errors = 1
 set tags+=./tags
-set statusline+=%f
+set laststatus=2
+set statusline+=[%f]
+set wildmode=list:longest
 let g:winManagerWindowLayout = "FileExplorer|TagList"
+let Tlist_Show_One_File = 1
 let g:winManagerWidth = 40
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplMapCTabNavArrows = 1
